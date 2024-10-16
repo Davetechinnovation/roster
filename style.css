@@ -1,0 +1,552 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    overflow-x: hidden;
+}
+
+ .container{
+    background: linear-gradient(to right, #4CA1AF, #C4E0E5);
+    height: 100vh;
+}
+
+.content{
+    margin-left: 400px;
+}
+
+.content h1{
+    font-size: 4em;
+   position: relative;
+   top: 300px;
+   right: -50px;
+}
+
+.note-p{
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 10px;
+}
+
+.h4-p{
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 10px;
+    padding-bottom: 20px;
+    position: relative;
+    right: -60px;
+}
+
+.all{
+   margin-top: 320px;
+   font-size: 1.7em;
+   margin-left: 100px;
+   
+}
+
+b{
+    margin-left: 230px;
+   position: relative;
+   top: 20px;
+   font-size: 1.4em;
+}
+
+.button{
+    position: relative;
+    top: 50px;
+    right: -300px;
+    padding: 20px;
+    background: linear-gradient(to right, #4CA1AF, blue);
+    max-width: 200px;
+    border-radius: 10px;
+
+}
+
+.button a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.5em;
+    position: relative;
+    right: -20px;
+}
+
+.timetable th{
+    border: 1px solid skyblue; 
+    padding: 8px ; 
+    text-align: left; 
+    border-radius: 10px;
+    font-size: 2.5em;
+}
+
+.timetable td{
+    border: 1px solid skyblue; 
+    padding: 8px ; 
+    text-align: left; 
+    width: 130px;
+    border-radius: 10px;
+    font-size: 2.5em;
+ } 
+
+
+ .timetable table {
+    width: 50%;
+    border-collapse: collapse;
+    margin-left: 200px;
+    margin-top: 60px;
+    box-shadow: 0 0 20px skyblue;
+    
+}
+
+
+.roster {
+    margin-top: 20px; 
+    background: black;
+    color: gold;
+    padding-bottom: 30px;
+    padding: 20px; 
+    padding-top: 300px;
+}
+
+.roster h3 {
+    text-align: center;
+    
+    font-size: 3em;
+}
+
+
+.roster-list table {
+    width: 50%;
+    border-collapse: collapse;
+    margin: 0 auto; 
+    margin-top: 20px;
+    box-shadow: 0 0 20px gold;
+}
+
+.roster-list th, .roster-list td {
+    border: 1px solid gold; 
+    padding: 8px; 
+    text-align: left; 
+    border-radius: 10px;
+    font-size: 3em;
+}
+
+.roster-list td {
+    width: 130px;
+}
+
+/* Adjust .cont if needed */
+.cont {
+    margin-top: 20px; /* Adjust as needed */
+}
+
+
+
+
+ 
+
+ 
+ .mo{
+    position: fixed;
+    top: -300px;
+    width: 100%;
+    height: 150vh;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    padding: 10px;
+    z-index: 1000;
+    opacity: 0; 
+    visibility: hidden; 
+    pointer-events: none; 
+    padding-top: 500px;
+    font-size: 3em;
+    color: skyblue;
+    font-weight: bolder;
+    font-style: italic;
+    transition: opacity 0.5s ease-in-out, transform 0.6s ease-in-out;
+    transform: translateX(-100%);
+}
+.mo.show {
+    opacity: 1; 
+    visibility: visible; 
+    pointer-events: auto; 
+    display: block;
+    transform: translateX(0);
+
+}
+
+.hamburge{
+    position: relative;
+    top: -700px;
+    right: -1100px;
+}
+
+
+
+.mo li {
+    list-style: none;
+    padding-bottom: 30px;
+   margin-left: 400px;
+}
+
+.mo p{
+    position: relative;
+    right: -600px;
+    top: -80px;
+}
+
+
+.th{
+    position: fixed;
+    top: -300px;
+    width: 100%;
+    height: 150vh;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    padding: 10px;
+    z-index: 1000;
+    opacity: 0; 
+    visibility: hidden; 
+    pointer-events: none; 
+    padding-top: 500px;
+    font-size: 3em;
+    color: skyblue;
+    font-weight: bolder;
+    font-style: italic;
+    transition: opacity 0.5s ease-in-out, transform 0.6s ease-in-out;
+    transform: translateX(-100%);
+}
+
+.th.sho {
+    opacity: 1; 
+    visibility: visible; 
+    pointer-events: auto; 
+   
+    transform: translateX(0);
+}
+
+
+
+.th li {
+    list-style: none;
+    padding-bottom: 30px;
+   margin-left: 400px;
+}
+
+.th p{
+    position: relative;
+    right: -630px;
+    top: -80px;
+}
+
+.hamburger{
+    position: relative;
+    top: -700px;
+    right: -1100px;
+}
+ 
+
+.shuffule{
+    background-color: skyblue;
+    padding: 13px;
+    border-radius: 10px;
+    position: relative;
+    top: -70px;
+    right: -750px;
+    cursor: pointer;
+}
+
+
+ table button{
+    text-decoration: none;
+    color: gold;
+    padding: 20px;
+    width: 60%;
+    background-color: transparent;
+    border-radius: 10px;
+    font-size: 0.6em;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    
+ }
+
+ table button:hover {
+    background-color: blue;
+}
+
+
+ .cont{
+    position: relative;
+    top: 50px;
+    right: -700px;
+    padding: 20px;
+    background: gold;
+    max-width: 200px;
+    border-radius: 10px;
+
+}
+
+.cont a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.4em;
+    margin-left: 20px;
+}
+
+
+@media(max-width: 768px) {
+    .container{
+        background: linear-gradient(to right, #4CA1AF, #C4E0E5);
+        height: auto;
+        width: 670px;
+    }
+    
+    .content{
+        margin-left: 100px;
+        line-height: 50px;
+        position: relative;
+        top: -170px;
+       
+    }
+    
+    .content h1{
+        font-size: 2.4em;
+       position: relative;
+       top: 300px;
+       left: -50px;
+       width: 1000px;
+    }
+    
+    .note-p{
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 10px;
+        position: relative;
+        left: -145px;
+        width: 1000px;
+    }
+    
+    .h4-p{
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 10px;
+        padding-bottom: 20px;
+        position: relative;
+        right: 70px;
+
+    }
+    
+    .all{
+       margin-top: 320px;
+       font-size: 1.4em;
+       margin-left: 50px;
+       
+    }
+    
+    b{
+       margin-left: 1px;
+       position: relative;
+       bottom: -20px;
+       font-size: 1.4em;
+       
+    }
+    
+    .button{
+        position: relative;
+        top: 50px;
+        right: -100px;
+        padding: 10px;
+        background: linear-gradient(to right, #4CA1AF, blue);
+        max-width: 200px;
+        border-radius: 10px;
+    
+    }
+    
+    .timetable th{
+        border: 1px solid skyblue; 
+        padding: 5px ; 
+        text-align: left; 
+        border-radius: 10px;
+        font-size: 1em;
+        width: 10px;
+        
+    }
+    
+    .timetable td{
+        border: 1px solid skyblue; 
+        padding: 5px ; 
+        text-align: left; 
+        width: 10px;
+        border-radius: 10px;
+        font-size: 1em;
+       
+     } 
+    
+    
+     .timetable table {
+       max-width: 20px;
+       
+        margin-left: 0px;
+        margin-top: 60px;
+        box-shadow: 0 0 20px skyblue;
+        overflow-y: auto;
+        
+    }
+    .roster {
+        margin-top: 20px; 
+        background: black;
+        color: gold;
+        padding-bottom: 30px;
+        padding: 20px; 
+        padding-top: 300px;
+    }
+    
+    .roster h3 {
+        text-align: center;
+        
+        font-size: 3em;
+    }
+    
+    
+    .roster-list table {
+        width: 50%;
+        border-collapse: collapse;
+        margin: 0 auto; 
+        margin-top: 20px;
+        box-shadow: 0 0 20px gold;
+    }
+    
+    .roster-list th, .roster-list td {
+        border: 1px solid gold; 
+        padding: 8px; 
+        text-align: left; 
+        border-radius: 10px;
+        font-size: 3em;
+    }
+    
+    .roster-list td {
+        width: 130px;
+    }
+    
+    
+    .cont {
+        margin-top: 20px; 
+    }
+    
+     
+    
+     
+     .mo{
+        position: fixed;
+        top: -300px;
+        left: -390px;
+        width: 1000px;
+        font-size: 1.6em;
+    }
+    .mo.show {
+        opacity: 1; 
+        visibility: visible; 
+        pointer-events: auto; 
+        display: block;
+        transform: translateX(0);
+    
+    }
+    
+    .hamburge{
+        position: relative;
+        top: -500px;
+        right: -700px;
+    }
+
+    .hamburge img{
+        width: 100px;
+    }
+    
+    
+    
+    
+    .mo p{
+        position: relative;
+        right: -530px;
+        top: -65px;
+    }
+    
+    
+    .th{
+        top: -300px;
+        left: -400px;
+        width: 1000px;
+        font-size: 1.5em;
+    }
+    
+
+    
+    .th p{
+        position: relative;
+        right: -560px;
+        top: -55px;
+    }
+    
+    .hamburger {
+        position: relative;
+        top: -500px;
+        right: -700px;
+       
+    }
+
+
+     .hamburger img{
+    width: 100px;
+   }
+     
+    
+    .shuffule{
+        background-color: skyblue;
+        padding: 13px;
+        border-radius: 10px;
+        position: relative;
+        top: -50px;
+        right: -220px;
+        cursor: pointer;
+    }
+    
+    
+     table button{
+        text-decoration: none;
+        color: gold;
+        padding: 5px;
+        width: 60%;
+        background-color: transparent;
+        border-radius: 10px;
+        font-size: 0.5em;
+        transition: background-color 0.3s ease;
+        cursor: pointer;
+        
+     }
+    
+     table button:hover {
+        background-color: blue;
+    }
+    
+    
+     .cont{
+        position: relative;
+        top: 50px;
+        right: -160px;
+        padding: 10px;
+        background: gold;
+        max-width: 200px;
+        border-radius: 10px;
+    
+    }
+    
+    .cont a{
+        text-decoration: none;
+        color: black;
+        font-size: 1.4em;
+        margin-left: 20px;
+    }
+    
+}
